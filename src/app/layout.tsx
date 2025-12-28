@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ciencia - NewCooltura Informada",
+  title: "Ciencia Chile - ANID | NewCooltura Informada",
   description: "Centros de investigacion, fondos ANID, Becas Chile y calculadora de tamano muestral",
+  keywords: ["ANID", "ciencia Chile", "investigacion", "Becas Chile", "fondos concursables"],
+  openGraph: {
+    title: "Ciencia Chile - NewCooltura Informada",
+    description: "Investigacion, fondos ANID y Becas Chile",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
